@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "EEG Motor Movement/Imagery Dataset",
-  "description": "This dataset comprises over 1500 EEG recordings from 109 volunteers performing motor execution and motor imagery tasks. Subjects performed 14 experimental runs including baseline recordings (eyes open/closed) and four motor tasks involving actual or imagined movement of the fists and feet, recorded using 64-channel EEG with the BCI2000 system. The dataset is designed to support brain-computer interface research and motor imagery classification studies.",
-  "methods_description": "EEG data were recorded from 109 subjects using a 64-channel BCI2000 system. Each subject completed 14 experimental runs consisting of two one-minute baseline runs (eyes open and eyes closed) and three two-minute runs each of four motor tasks: (1) actual left/right fist movement, (2) imagined left/right fist movement, (3) actual bilateral fist or foot movement, and (4) imagined bilateral fist or foot movement.",
+  "description": "A collection of over 1500 one- and two-minute 64-channel EEG recordings from 109 volunteers performing motor execution and motor imagery tasks. The tasks involved opening and closing the left or right fist, or both fists or both feet, either actually or imagined, along with eyes-open and eyes-closed baseline runs. Data were recorded with the BCI2000 system and support brain-computer interface research.",
+  "methods_description": "64-channel EEG was recorded with the BCI2000 system. Each subject completed 14 runs: two one-minute baseline runs (eyes open, eyes closed) and three two-minute runs of each of four tasks. The tasks were real or imagined fist movements, cued by a target on the left or right of the screen, and real or imagined movements of both fists or both feet, cued by a target at the top or bottom of the screen.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -21,33 +21,18 @@
       "term": "motor imagery"
     },
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+      "term": "motor movement"
     },
     {
-      "term": "motor execution"
-    },
-    {
-      "term": "event-related desynchronization"
+      "term": "brain-computer interface"
     },
     {
       "term": "BCI2000"
     },
     {
-      "term": "resting state"
-    },
-    {
-      "term": "fist movement"
-    },
-    {
-      "term": "foot movement"
-    },
-    {
-      "term": "PhysioBank"
-    },
-    {
-      "term": "PhysioNet"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     }
   ],
   "related_identifiers": [
@@ -57,24 +42,19 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004362",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds004362",
       "identifier_type": "DOI",
       "relation_type": "IsVersionOf"
     },
     {
-      "identifier": "10.1109/TBME.2004.827072",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds004362.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004362",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -96,7 +76,7 @@
     "eeg"
   ],
   "sizes": [
-    "12.0 GB (3625 files)"
+    "11.13 GB (3625 files)"
   ],
   "formats": [
     ".edf",
