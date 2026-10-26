@@ -19,7 +19,9 @@
     "Description": "Marker value associated with the event",
     "Levels": {
       "BASE1T0": "baseline (eyes open)",
+      "BASE1T1": "sub-089 only: rest of the eyes-open baseline. The PhysioNet source (S089R01) marks T0 for the first 0.1 s and T1 from 0.1 s to the end of the run; baseline runs present no task cue.",
       "BASE2T0": "baseline (eyes closed)",
+      "BASE2T1": "sub-089 only: rest of the eyes-closed baseline. The PhysioNet source (S089R02) marks T0 for the first 0.1 s and T1 from 0.1 s to the end of the run; baseline runs present no task cue.",
       "TASK1T0": "Task 1 rest ",
       "TASK1T1": "onset of the real motion of opening and closing the left fist when target appears on left side of screen",
       "TASK1T2": "onset of the real motion of opening and closing the right fist when target appears on right side of screen",

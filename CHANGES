@@ -5,7 +5,9 @@
     Gender held n/a and Age held M.
   - task-motion_events.json: Units "second" -> "s"; descriptions removed for trial_type, response_time and
     stim_file, which appear in none of the 1526 events.tsv files (all use onset, duration, sample, value);
-    Description added.
+    Description added. Levels BASE1T1 and BASE2T1 added for the two sub-089 baseline markers that the PhysioNet
+    source annotates (S089R01/R02: T0 for 0.1 s, then T1 to the end of the run); without them the validator
+    rejects those two values.
   - participants.json: Description added. New task-motion_eeg.json (task description, instructions, institution).
   - 1526 channels.tsv: type and units n/a -> EEG and uV.
   - 3052 per-run coordsystem.json and electrodes.tsv files replaced by one subject-level pair per subject
