@@ -1,5 +1,17 @@
-1.0.1 2026-10-13
-  - 1.0.1 2026-10-13
-  - - Metadata-only curation (no signal changes): participants.tsv sub-044 fix; task events sidecar units/columns; channels type/units fill (EEG/uV); per-subject coordsystem/electrodes consolidation; added task-motion_eeg.json, GeneratedBy, SourceDatasets, descriptions.
+2.0.0 2026-10-26
+  - Brings in the OpenNeuro ds004362 1.0.1 release (2026-10-13), metadata only; no recording file changes.
+    A new upstream release takes a major version on NEMAR.
+  - participants.tsv: sub-044 values realigned to their columns (Gender M; Age and Handedness n/a). Before,
+    Gender held n/a and Age held M.
+  - task-motion_events.json: Units "second" -> "s"; descriptions removed for trial_type, response_time and
+    stim_file, which appear in none of the 1526 events.tsv files (all use onset, duration, sample, value);
+    Description added.
+  - participants.json: Description added. New task-motion_eeg.json (task description, instructions, institution).
+  - 1526 channels.tsv: type and units n/a -> EEG and uV.
+  - 3052 per-run coordsystem.json and electrodes.tsv files replaced by one subject-level pair per subject
+    (the 14 per-run copies were byte-identical).
+  - dataset_description.json: Version 1.0.0 -> 2.0.0; GeneratedBy added; SourceDatasets now OpenNeuro
+    ds004362 1.0.1 and PhysioNet eegmmidb 1.0.0 (10.13026/C28G6P).
+
 1.0.0 2022-12-15
   - Initial release on OpenNeuro
